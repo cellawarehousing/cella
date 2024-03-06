@@ -1,0 +1,34 @@
+/* Footer styles */
+footer {
+    background-color: #1e4d2b;
+    color: #fff;
+    margin-bottom:0px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: inline-block;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ebdddd;
+  }
+
+  a
+  {
+    color: #97d7ef; 
+  }
+  a:hover {
+    /* background-color: #97bca0; Darker shade of Dark Green color on hover */
+    color: #97bca0; 
+  }
+  
+  
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }

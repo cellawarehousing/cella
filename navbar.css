@@ -1,0 +1,44 @@
+/* navbar.css */
+
+.navbar {
+    /* width: 100%; */
+    display: flex;
+    background-color: #1e4d2b; /* Dark Green color for the navbar */
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333; Dark background color */
+  }
+  
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+      }
+  
+  /*nav ul li a:hover {
+    }
+    background-color: #555; Darker background color on hover 
+  */

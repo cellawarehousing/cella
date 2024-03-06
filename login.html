@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Name - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #293241; /* Bottle Green color for the background */
+      color: #fff; /* White text color */
+      position: relative; /* added for absolute positioning */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #334756; /* Darker shade of Bottle Green for the container */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #1e4d2b; /* Dark Green color for the submit button */
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0f2d17; /* Darker shade of Dark Green color on hover */
+    }
+
+    .company-logo {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+   
+    .company-title {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .social-icons {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      margin-left: 10px;
+    }
+
+  </style>
+</head>
+<!-- Include Navbar CSS -->
+<link rel="stylesheet" href="/cella/navbar.css">
+
+<body>
+  
+  <!-- Include Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  </script>
+  
+  <div class="container">
+    <div class="company-logo">
+      <img src="company_logo.png" alt="Company Logo" width="150">
+    </div>
+    <h1>Login</h1>
+    <form id="loginForm">
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  
+  <div class="company-title">
+    <p>Company Name &copy; 2024</p>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+  </div>
+
+  <script>
+  </script>
+
+  <!-- Include JavaScript file -->
+  <script src="script.js"></script>
+
+</body>
+</html>

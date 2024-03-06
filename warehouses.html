@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Map</title>
+    <style>
+
+    </style>
+
+    <!-- Include Navbar CSS -->
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="body.css">
+
+</head>
+
+<body>
+
+    <!-- Include Navbar -->
+    <div id="navbar-placeholder"></div>
+    <script>
+    </script>
+
+    <h1><img src="">Warehouses Locations</h1>
+    <select id="citySelect" onchange="updateMap()">
+        <option value="newyork">New York</option>
+        <option value="london">London</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="sydney">Sydney</option>
+    </select>
+
+    <div id="map"></div>
+
+    <div id="selectedCity">Selected City: <span id="cityName">New York</span></div>
+
+    <script>
+
+
+        var map;
+        var markers = {
+            newyork: { lat: 40.7128, lng: -74.0060 },
+            london: { lat: 51.5074, lng: -0.1278 },
+            tokyo: { lat: 35.6895, lng: 139.6917 },
+            sydney: { lat: -33.8688, lng: 151.2093 }
+        };
+        var marker;
+        var city;
+
+        function initMap() {
+            var mapOptions = {
+                center: markers['newyork'], // Default: New York
+                zoom: 10
+            };
+
+            map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            marker = new google.maps.Marker({
+                position: markers['newyork'],
+                map: map
+            });
+        }
+
+        function updateMap() {
+            city = document.getElementById('citySelect').value;
+            //alert("update map:  " + city);
+            document.getElementById('cityName').textContent = city.charAt(0).toUpperCase() + city.slice(1); // Capitalize the city name
+            map.panTo(markers[city]);
+            marker.setPosition(markers[city]);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async
+        defer></script>
+
+    <!-- Include JavaScript file -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

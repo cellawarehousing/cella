@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Name - Login</title>
+</head>
+
+<!-- Include Navbar CSS -->
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="body.css">
+
+<body>
+
+  <!-- Include Navbar -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    // Fetch and include the navbar content
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
+        //alert("fetching navbar contents")
+    });
+  </script>
+
+<h1>Our Services</h1>
+</body>

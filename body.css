@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif  ;
+  margin: 0;
+  padding: 0;
+  background-color: #03615b; /* Bottle Green color for the background */
+  color: #fff; /* White text color */
+  position: relative; /* added for absolute positioning */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  /*background-color: #03615b/* Darker shade of Bottle Green for the container */
+  /* border: 1px solid red ; */
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h1 {
+  width: 500px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#company
+{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  /* align-items: end; */
+  border: 10px solid rgb(240, 225, 225) ;
+  border-radius: 80px;
+  border-color: rgb(160, 206, 217) ;
+  box-shadow: 0 0 50px rgba(215, 211, 211, 0.5); 
+  padding: 20px 40px 10px 40px;
+
+}
+#company-name{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana, sans-serif';
+  text-align: left;
+  font-size: 60px;
+  margin: 10px;
+  
+}
+
+h7{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana, sans-serif';
+  /* justify-content: start; */
+  /* align-items: end; */
+   text-align: left;
+  font-size: 15px;
+  font-style: italic;
+  color: aqua;
+  margin: 0 0 0 10px;
+  /* padding: 2px; */
+}
+
+h4{
+  margin: 20px;
+}
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #1e4d2b; /* Dark Green color for the input fields */
+  color: #fff;
+}
+
+input[type="submit"] {
+  background-color: #1e4d2b; /* Dark Green color for the submit button */
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0f2d17; /* Darker shade of Dark Green color on hover */
+}
+
+
+.company-logo {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.company-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#footer{
+  display: flex;
+  margin-bottom: 0;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* for selecting a wearehouse */
+
+#citySelect {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #1e4d2b;
+  /* Dark Green color for the dropdown */
+  color: #fff;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#selectedCity {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+
